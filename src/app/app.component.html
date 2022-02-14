@@ -1,0 +1,4 @@
+<input type="text" placeholder="Enter New Task" #task name="task">
+<br><br>
+<button (click)="addTask(task.value)">Add Task</button>
+<p *ngFor="let id of taskValue">{{id.name}} <button (click)="remoteItem(id.id)">Remove</button></p>
